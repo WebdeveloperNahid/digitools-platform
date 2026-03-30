@@ -5,8 +5,8 @@ import { IoMdCart } from "react-icons/io";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="mt-2">
-      <div className="w-[83%] flex justify-between items-center mx-auto h-12 bg-green-800">
+    <nav className="mt-2 shadow-2xl">
+      <div className="w-[83%] flex justify-between items-center mx-auto h-12 ">
         <div className="flex justify-center items-center">
           <span className="flex" onClick={() => setOpen(!open)}>
             {open ? (
@@ -15,20 +15,20 @@ const Navbar = () => {
               <Menu className=" md:hidden"></Menu>
             )}
 
-            <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 absolute duration-1000 ${open ? "top-11" : "-top-40" } `} >
-              <a className="hover:bg-indigo-700 px-3 " href="">
+            <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 absolute duration-1000 ${open ? "top-12 " : "-top-40" } `} >
+              <a className="hover:bg-indigo-600 px-3 " href="">
                 Products
               </a>
-              <a className=" hover:bg-indigo-700 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3" href="">
                 Features
               </a>
-              <a className=" hover:bg-indigo-700 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3" href="">
                 Pricing
               </a>
-              <a className=" hover:bg-indigo-700 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3" href="">
                 Testimonials
               </a>
-              <a className=" hover:bg-indigo-700 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3" href="">
                 FAQ
               </a>
             </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="flex justify-center items-center gap-2">
           <IoMdCart />
           <h3>Login</h3>
-          <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-2 px-3 rounded-3xl">
+          <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-2 px-3 rounded-3xl text-white ">
             Get Started
           </button>
         </div>
