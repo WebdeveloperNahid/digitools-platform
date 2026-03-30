@@ -1,0 +1,62 @@
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
+import { IoMdCart } from "react-icons/io";
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  return (
+    <nav className="mt-2">
+      <div className="w-[83%] flex justify-between items-center mx-auto h-12 bg-green-800">
+        <div className="flex justify-center items-center">
+          <span className="flex" onClick={() => setOpen(!open)}>
+            {open ? (
+              <X className=" md:hidden"></X>
+            ) : (
+              <Menu className=" md:hidden"></Menu>
+            )}
+
+            <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 absolute duration-1000 ${open ? "top-11" : "-top-40" } `} >
+              <a className="hover:bg-indigo-700 px-3 " href="">
+                Products
+              </a>
+              <a className=" hover:bg-indigo-700 px-3" href="">
+                Features
+              </a>
+              <a className=" hover:bg-indigo-700 px-3" href="">
+                Pricing
+              </a>
+              <a className=" hover:bg-indigo-700 px-3" href="">
+                Testimonials
+              </a>
+              <a className=" hover:bg-indigo-700 px-3" href="">
+                FAQ
+              </a>
+            </div>
+          </span>
+
+          <h1 className="font-semibold text-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+            DigiTools
+          </h1>
+        </div>
+
+        <span className="space-x-3 hidden md:block">
+          <a href="http://products">Products</a>
+          <a href="http://Features">Features</a>
+          <a href="http://Pricing">Pricing</a>
+          <a href="http://Testimonials">Testimonials</a>
+          <a href="http://FAQ">FAQ</a>
+        </span>
+
+        <div className="flex justify-center items-center gap-2">
+          <IoMdCart />
+          <h3>Login</h3>
+          <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-2 px-3 rounded-3xl">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
