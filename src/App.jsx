@@ -4,7 +4,7 @@ import Hero from "./components/NavBar/Hero/Hero";
 import Navbar from "./components/NavBar/Navbar";
 import ProductDatacart from "./components/ProductDataCart/ProductDatacart";
 import Stats from "./components/Stats/Stats";
-import Toggling from "./components/Toggling/Toggling";
+
 
 const fetchData = async () => {
   const res = await fetch("/CartData.json");
@@ -19,9 +19,12 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Stats></Stats>
-      <Toggling></Toggling>
+      
+
       <Suspense
-        fallback={<span className="loading loading-bars loading-xl"></span>}
+        fallback={ <div className="flex justify-center items-center min-h-dvh">
+          <span className="loading loading-bars loading-xl"></span>
+        </div> }
       >
         <ProductDatacart fetchPromise={fetchPromise}></ProductDatacart>
       </Suspense>
