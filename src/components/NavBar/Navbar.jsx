@@ -16,19 +16,19 @@ const Navbar = () => {
             )}
 
             <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 absolute duration-1000 ${open ? "top-12 " : "-top-40" } `} >
-              <a className="hover:bg-indigo-600 px-3 " href="">
+              <a className="hover:bg-indigo-600 px-3 text-white " href="">
                 Products
               </a>
-              <a className=" hover:bg-indigo-600 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3 text-white" href="">
                 Features
               </a>
-              <a className=" hover:bg-indigo-600 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3 text-white" href="">
                 Pricing
               </a>
-              <a className=" hover:bg-indigo-600 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3 text-white" href="">
                 Testimonials
               </a>
-              <a className=" hover:bg-indigo-600 px-3" href="">
+              <a className=" hover:bg-indigo-600 px-3 text-white" href="">
                 FAQ
               </a>
             </div>

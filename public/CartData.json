@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -12,7 +13,7 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "icon": "PenTool"
+    "icon": "/writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -27,7 +28,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "Palette"
+    "icon": "/public/design-tool.png"
   },
   {
     "id": 3,
@@ -42,7 +43,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "Camera"
+    "icon": "/public/camera.png"
   },
   {
     "id": 4,
@@ -57,7 +58,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "Settings"
+    "icon": "/public/operation.png"
   },
   {
     "id": 5,
@@ -72,7 +73,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "FileText"
+    "icon": "/public/portfolio.png"
   },
   {
     "id": 6,
@@ -87,7 +88,7 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "icon": "Share2"
+    "icon": "/public/social-media.png"
   },
   {
     "id": 7,
@@ -102,7 +103,7 @@
       "100+ transitions",
       "Export to multiple formats"
     ],
-    "icon": "Video"
+    "icon": "/public/camera.png"
   },
   {
     "id": 8,
@@ -117,13 +118,6 @@
       "SEO tools",
       "Custom domain support"
     ],
-    "icon": "Globe"
+    "icon": "/public/social-media.png"
   }
-]      
-
-
-
-
-// import { PenTool, Palette, Camera, Settings, FileText, Share2, Video, Globe } from "lucide-react";
-
-// export const products = [...];
+]
