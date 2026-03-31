@@ -28,7 +28,7 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "icon": "/public/design-tool.png"
+    "icon": "/design-tool.png"
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
       "Commercial use",
       "No attribution"
     ],
-    "icon": "/public/camera.png"
+    "icon": "/camera.png"
   },
   {
     "id": 4,
@@ -58,7 +58,7 @@
       "API access",
       "Custom workflows"
     ],
-    "icon": "/public/operation.png"
+    "icon": "/operation.png"
   },
   {
     "id": 5,
@@ -73,7 +73,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "/public/portfolio.png"
+    "icon": "/portfolio.png"
   },
   {
     "id": 6,
@@ -88,7 +88,7 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "icon": "/public/social-media.png"
+    "icon": "/social-media.png"
   },
   {
     "id": 7,
@@ -103,7 +103,7 @@
       "100+ transitions",
       "Export to multiple formats"
     ],
-    "icon": "/public/camera.png"
+    "icon": "/camera.png"
   },
   {
     "id": 8,
@@ -118,6 +118,6 @@
       "SEO tools",
       "Custom domain support"
     ],
-    "icon": "/public/social-media.png"
+    "icon": "/social-media.png"
   }
 ]

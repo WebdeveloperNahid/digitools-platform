@@ -15,7 +15,7 @@ const Navbar = () => {
               <Menu className=" md:hidden"></Menu>
             )}
 
-            <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 absolute duration-1000 ${open ? "top-12 " : "-top-40" } `} >
+            <div className={`flex flex-col  ml-7 bg-indigo-500  py-1 md:hidden absolute duration-1000 ${open ? "top-12 " : "-top-40" }  `} >
               <a className="hover:bg-indigo-600 px-3 text-white " href="">
                 Products
               </a>
