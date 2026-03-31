@@ -43,7 +43,7 @@ const ProductDatacart = ({
           selectedProducts={selectedProducts}
         ></DataCart>
       ) : (
-        <SelectedCart selectedProducts={selectedProducts}></SelectedCart>
+        <SelectedCart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} ></SelectedCart>
       )}
     </div>
   );

@@ -4,6 +4,7 @@ import Hero from "./components/NavBar/Hero/Hero";
 import Navbar from "./components/NavBar/Navbar";
 import ProductDatacart from "./components/ProductDataCart/ProductDatacart";
 import Stats from "./components/Stats/Stats";
+import { ToastContainer } from "react-toastify";
 
 
 const fetchData = async () => {
@@ -29,6 +30,8 @@ function App() {
       >
         <ProductDatacart fetchPromise={fetchPromise}  selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts} ></ProductDatacart>
       </Suspense>
+
+       <ToastContainer />
     </>
   );
 }
