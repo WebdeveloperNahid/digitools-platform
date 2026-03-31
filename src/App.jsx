@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Hero from "./components/NavBar/Hero/Hero";
 import Navbar from "./components/NavBar/Navbar";
@@ -13,10 +13,11 @@ const fetchData = async () => {
 
 function App() {
   const fetchPromise = fetchData();
+   const [selectedProducts, setSelectedProducts] = useState([]);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar  selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} ></Navbar>
       <Hero></Hero>
       <Stats></Stats>
       
@@ -26,7 +27,7 @@ function App() {
           <span className="loading loading-bars loading-xl"></span>
         </div> }
       >
-        <ProductDatacart fetchPromise={fetchPromise}></ProductDatacart>
+        <ProductDatacart fetchPromise={fetchPromise}  selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts} ></ProductDatacart>
       </Suspense>
     </>
   );
