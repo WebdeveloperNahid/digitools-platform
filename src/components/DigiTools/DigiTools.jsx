@@ -5,7 +5,7 @@ import twitter from "../../assets/Twitter.png"
 
 const DigiTools = () => {
     return (
-        <div className='bg-[#101727] mb-20'>
+        <div className='bg-[#101727]'>
 
             <div className='w-[83%] mx-auto py-20 flex justify-between  gap-10 flex-wrap '>
 

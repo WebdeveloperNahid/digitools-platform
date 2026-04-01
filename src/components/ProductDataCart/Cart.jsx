@@ -37,8 +37,8 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
               <img src={productData.icon} alt="" />
             </span>
 
-            <h2 className="text-3xl font-semibold">{productData.name} </h2>
-            <p className="text-[#888888] ">{productData.description}</p>
+            <h2 className="text-3xl font-semibold text-left">{productData.name} </h2>
+            <p className="text-[#888888] text-left">{productData.description}</p>
             <span className="text-xl text-[#888888] flex items-center">
               <h1 className="font-bold text-[black] text-2xl">
                 {productData.price}
