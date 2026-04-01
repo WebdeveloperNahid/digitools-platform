@@ -55,7 +55,7 @@ const SelectedCart = ({ selectedProducts, setSelectedProducts, dolar, setDolar }
         <h2 className="text-start w-[83%] mx-auto text-2xl font-bold mt-2 mt-10 mb-2">
         Total
       </h2>
-      <h2 className="mr-5">{dolar}$</h2>
+      <h2 className="mr-5 font-bold text-3xl text-green-500">{dolar}$</h2>
       </div>
       <button onClick={handleRemoveAll} className="btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-[90%] mx-auto  py-6 rounded-3xl">
         Proceed To Checkout

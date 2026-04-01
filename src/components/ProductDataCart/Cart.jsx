@@ -72,7 +72,7 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
                 onClick={handleSubscribe}
                 disabled = {isSubscribe ? true : false}
                 
-                className="btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl py-5 "
+                className= {`btn   text-white btn-block rounded-3xl py-5 ${isSubscribe ? "bg-green-500 ":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}
               >
                 {isSubscribe ? "Subscribed " : "Subscribe "}
               </button>
