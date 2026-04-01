@@ -7,6 +7,8 @@ const ProductDatacart = ({
   fetchPromise,
   setSelectedProducts,
   selectedProducts,
+  dolar,
+  setDolar
 }) => {
   // console.log(fetchPromise)
   const productDatas = use(fetchPromise);
@@ -41,9 +43,11 @@ const ProductDatacart = ({
           productDatas={productDatas}
           setSelectedProducts={setSelectedProducts}
           selectedProducts={selectedProducts}
+          dolar={dolar}
+          setDolar ={setDolar}
         ></DataCart>
       ) : (
-        <SelectedCart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} ></SelectedCart>
+        <SelectedCart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} dolar={dolar} setDolar ={setDolar}  ></SelectedCart>
       )}
     </div>
   );

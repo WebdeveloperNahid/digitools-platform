@@ -15,6 +15,7 @@ const fetchData = async () => {
 function App() {
   const fetchPromise = fetchData();
    const [selectedProducts, setSelectedProducts] = useState([]);
+   const [dolar,setDolar] = useState(0)
 
   return (
     <>
@@ -28,7 +29,7 @@ function App() {
           <span className="loading loading-bars loading-xl"></span>
         </div> }
       >
-        <ProductDatacart fetchPromise={fetchPromise}  selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts} ></ProductDatacart>
+        <ProductDatacart fetchPromise={fetchPromise}  selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts} dolar={dolar} setDolar ={setDolar} ></ProductDatacart>
       </Suspense>
 
        <ToastContainer />

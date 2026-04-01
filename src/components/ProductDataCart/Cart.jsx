@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const Cart = ({ productData, selectedProducts, setSelectedProducts }) => {
+const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDolar }) => {
   const [isSubscribe, setIsSubscribe] = useState(false);
 
   const handleSubscribe = () => {
     toast.success(`${productData.name} is Subscribed`)
     setIsSubscribe(true);
-    setSelectedProducts([...selectedProducts,productData])
+    setSelectedProducts([...selectedProducts,productData]);
+    setDolar(dolar + productData.price)
   };
 
 
