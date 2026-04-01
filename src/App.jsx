@@ -5,6 +5,8 @@ import Navbar from "./components/NavBar/Navbar";
 import ProductDatacart from "./components/ProductDataCart/ProductDatacart";
 import Stats from "./components/Stats/Stats";
 import { ToastContainer } from "react-toastify";
+import GetStarted from "./components/GetStarted/GetStarted";
+import SimpleTransparent from "./components/SimpleTransparent/SimpleTransparent";
 
 
 const fetchData = async () => {
@@ -31,6 +33,9 @@ function App() {
       >
         <ProductDatacart fetchPromise={fetchPromise}  selectedProducts={selectedProducts}  setSelectedProducts={setSelectedProducts} dolar={dolar} setDolar ={setDolar} ></ProductDatacart>
       </Suspense>
+
+      <GetStarted></GetStarted>
+      <SimpleTransparent></SimpleTransparent>
 
        <ToastContainer />
     </>

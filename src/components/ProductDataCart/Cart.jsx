@@ -74,7 +74,7 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
                 
                 className="btn  bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl py-5 "
               >
-                {isSubscribe ? "Subscribed " : "Subscribe"}
+                {isSubscribe ? "Subscribed " : "Subscribe "}
               </button>
             </div>
           </div>
