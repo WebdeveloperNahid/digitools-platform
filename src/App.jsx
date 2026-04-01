@@ -7,6 +7,8 @@ import Stats from "./components/Stats/Stats";
 import { ToastContainer } from "react-toastify";
 import GetStarted from "./components/GetStarted/GetStarted";
 import SimpleTransparent from "./components/SimpleTransparent/SimpleTransparent";
+import ReadyTo from "./components/ReadyTo/ReadyTo";
+import DigiTools from "./components/DigiTools/DigiTools";
 
 
 const fetchData = async () => {
@@ -36,6 +38,8 @@ function App() {
 
       <GetStarted></GetStarted>
       <SimpleTransparent></SimpleTransparent>
+      <ReadyTo></ReadyTo>
+      <DigiTools></DigiTools>
 
        <ToastContainer />
     </>

@@ -215,7 +215,7 @@ const SimpleTransparent = () => {
               
             </ul>
             <div className="mt-6">
-              <button className="btn  btn-block  rounded-3xl  bg-white border border-purple-500 text-[#4F39F6] ">Start Pro Trial</button>
+              <button className="btn  btn-block  rounded-3xl  bg-white border border-purple-500 text-[#4F39F6] font-bold">Start Pro Trial</button>
             </div>
           </div>
         </div>
