@@ -6,7 +6,7 @@ const Navbar = ({selectedProducts}) => {
   const [open, setOpen] = useState(false);
   return (
     <nav className="mt-2 shadow-2xl">
-      <div className="w-[83%] flex justify-between items-center mx-auto h-12 ">
+      <div className="w-[83%] flex justify-between items-center mx-auto h-14 ">
         <div className="flex justify-center items-center gap-5 md:block  ">
           <span className="flex  " onClick={() => setOpen(!open)}>
             {open ? (
@@ -40,18 +40,18 @@ const Navbar = ({selectedProducts}) => {
         </div>
 
         <span className="space-x-3 hidden md:block">
-          <a href="http://products">Products</a>
-          <a href="http://Features">Features</a>
-          <a href="http://Pricing">Pricing</a>
-          <a href="http://Testimonials">Testimonials</a>
-          <a href="http://FAQ">FAQ</a>
+          <a href="http://products" className="hover:bg-indigo-500 px-2 py-1 hover:text-white">Products</a>
+          <a href="http://Features" className="hover:bg-indigo-500 px-2 py-1 hover:text-white">Features</a>
+          <a href="http://Pricing" className="hover:bg-indigo-500 px-2 py-1 hover:text-white">Pricing</a>
+          <a href="http://Testimonials" className="hover:bg-indigo-500 px-2 py-1 hover:text-white">Testimonials</a>
+          <a href="http://FAQ" className="hover:bg-indigo-500 px-2 py-1 hover:text-white">FAQ</a>
         </span>
 
         <div className="flex justify-center items-center gap-2  ">
           <IoMdCart />
-          <span className="bg-red-500 rounded-[50%]  px-[2px]  text-white -ml-35 -mt-7 absolute">{selectedProducts.length} </span>
-          <h3>Login</h3>
-          <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-2 px-3 rounded-3xl text-white ">
+          <span className="bg-red-500 rounded-[50%]  px-[6px]  text-white   -ml-35 -mt-9  absolute hover:bg-indigo-500 px-2 py-1 hover:text-white ">{selectedProducts.length} </span>
+          <h3 className="hover:bg-indigo-500 px-2 py-1 hover:text-white">Login</h3>
+          <button className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-2 px-3 rounded-3xl text-white hover:-translate-y-2 duration-500 cursor-pointer text-[10px] md:text-[17px]">
             Get Started
           </button>
         </div>

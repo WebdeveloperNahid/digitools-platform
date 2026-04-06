@@ -25,14 +25,14 @@ const ProductDatacart = ({
       <div className="space-x-3 flex justify-center  ">
         <button
           onClick={() => setProducts("Products")}
-          className={` ${products === "Products" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] " : " text-black font-semibold bg-gray-200"} px-5 py-3 rounded-3xl  font-semibold `}
+          className={` ${products === "Products" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] " : " text-black font-semibold bg-gray-200"} px-5 py-3 rounded-3xl  font-semibold hover:-translate-y-2 duration-500 `}
         >
           Products
         </button>
 
         <button
           onClick={() => setProducts("cart")}
-          className={` ${products === "cart" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] " : " text-black font-semibold bg-gray-200"} px-5 py-3 rounded-3xl  font-semibold `}
+          className={` ${products === "cart" ? "text-white bg-linear-to-r  from-[#4F39F6] to-[#9514FA] " : " text-black font-semibold bg-gray-200"} px-5 py-3 rounded-3xl  font-semibold hover:-translate-y-2 duration-500 hover:text-white  hover:bg-linear-to-r from-[#4F39F6] to-[#9514FA]`}
         >
           Cart ({selectedProducts.length}){" "}
         </button>

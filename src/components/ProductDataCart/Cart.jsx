@@ -5,6 +5,10 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
   const [isSubscribe, setIsSubscribe] = useState(false);
 
   const handleSubscribe = () => {
+    if(isSubscribe) {
+      toast.warning("You already subscribed");
+      return;
+    }
     toast.success(`${productData.name} is Subscribed`)
     setIsSubscribe(true);
     setSelectedProducts([...selectedProducts,productData]);
@@ -14,9 +18,9 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
 
   return (
     <div>
-      <div className="  flex flex-col h-full hover:-translate-y-2 duration-300">
-        <div className="card  bg-base-100 shadow-sm flex-1 flex flex-col">
-          <div className="card-body  flex-1 justify-between">
+      <div className="  flex flex-col h-full hover:-translate-y-2 duration-500">
+        <div className="card  bg-base-100 shadow-sm flex-1">
+          <div className="card-body ">
             <div className="flex  justify-end">
               <button
                 className={` rounded-3xl py-1 px-3 text-white ${
@@ -70,7 +74,7 @@ const Cart = ({ productData, selectedProducts, setSelectedProducts, dolar, setDo
             <div className="mt-6">
               <button
                 onClick={handleSubscribe}
-                disabled = {isSubscribe ? true : false}
+                // disabled = {isSubscribe ? true : false}
                 
                 className= {`btn   text-white btn-block rounded-3xl py-5 ${isSubscribe ? "bg-green-500 ":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}
               >

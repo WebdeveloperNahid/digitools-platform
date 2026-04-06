@@ -13,15 +13,15 @@ const SimpleTransparent = () => {
       </div>
 
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-10">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-10 ">
 
-        <div className="card  bg-base-100 shadow-2xl rounded-2xl">
+        <div className="card  bg-base-100 shadow-2xl rounded-2xl hover:-translate-y-2 duration-900 group">
           <div className="card-body">
            
             <div className="space-y-1">
-              <h2 className="text-3xl font-bold">Starter</h2>
-              <h2  className="text-[#888888]">Perfect for getting started</h2>
-              <span className="text-2xl font-bold ">$0<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
+              <h2 className="text-3xl font-bold group-hover:text-green-400">Starter</h2>
+              <h2  className="text-[#888888] group-hover:text-sky-500">Perfect for getting started</h2>
+              <span className="text-2xl font-bold group-hover:text-red-500 ">$0<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -96,17 +96,17 @@ const SimpleTransparent = () => {
               
             </ul>
             <div className="mt-6">
-              <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl">Get Started Free</button>
+              <button className=" btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl ">Get Started Free</button>
             </div>
           </div>
         </div>
-        <div className="card  bg-base-100 shadow-2xl rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[white]">
+        <div className="card  bg-base-100 shadow-2xl rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-[white] hover:-translate-y-2 duration-900 group">
           <div className="card-body">
-            <span className="badge badge-xs badge-warning absolute ml-30 -mt-9 p-3 ">Most Popular</span>
+            <span className="badge badge-xs badge-warning mx-auto -mt-9 p-4 font-bold group-hover:text-green-400 ">Most Popular</span>
             <div className="space-y-1  ">
-              <h2 className="text-3xl font-bold">Pro</h2>
+              <h2 className="text-3xl font-bold group-hover:text-green-400">Pro</h2>
               <h2  className="text-white">Best for professionals</h2>
-              <span className="text-2xl font-bold ">$29<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
+              <span className="text-2xl font-bold  group-hover:text-red-500">$29<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>
@@ -219,13 +219,13 @@ const SimpleTransparent = () => {
             </div>
           </div>
         </div>
-        <div className="card  bg-base-100 shadow-2xl rounded-2xl">
+        <div className="card  bg-base-100 shadow-2xl rounded-2xl hover:-translate-y-2 duration-900 group">
           <div className="card-body">
            
             <div className="space-y-1">
-              <h2 className="text-3xl font-bold">Enterprise</h2>
-              <h2  className="text-[#888888]">For teams and businesses</h2>
-              <span className="text-2xl font-bold ">$99<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
+              <h2 className="text-3xl font-bold group-hover:text-green-500">Enterprise</h2>
+              <h2  className="text-[#888888] group-hover:text-sky-500">For teams and businesses</h2>
+              <span className="text-2xl font-bold group-hover:text-red-500">$99<span className="text-[#888888] text-[20px] font-semibold">/month</span></span>
             </div>
             <ul className="mt-6 flex flex-col gap-2 text-xs">
               <li>

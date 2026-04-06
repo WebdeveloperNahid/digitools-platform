@@ -16,7 +16,7 @@ const GetStarted = () => {
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[83%] mx-auto gap-4 mb-10 ">
         <div>
-          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl">
+          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl hover:-translate-y-2 duration-500">
             <div className="text-end">
               <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-5 rounded-[50%] p-2 text-white  ">
                 01
@@ -38,7 +38,7 @@ const GetStarted = () => {
         </div>
 
         <div className="h-full  ">
-          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl">
+          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl hover:-translate-y-2 duration-500">
             <div className="text-end">
               <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-5 rounded-[50%] p-2 text-white  ">
                 02
@@ -60,7 +60,7 @@ const GetStarted = () => {
         </div>
 
         <div className="h-full ">
-          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl ">
+          <div className="p-7 bg-white shadow-2xl h-full flex flex-col rounded-2xl hover:-translate-y-2 duration-500 ">
             <div className="text-end">
               <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-5 rounded-[50%] p-2 text-white  ">
                 03
